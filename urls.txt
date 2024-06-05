@@ -1,0 +1,58 @@
+## Title:  Download raw NCBI data
+## Author: JTLovell
+## Date:   30-May 2024
+
+## Note - paths to phytozome repositories require login and navigation to the appropriate files
+  
+genomeUrls <- list(
+  
+  human = list(
+    Hg38 = c(
+      peptide = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_translated_cds.faa.gz",
+      gff = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.gff.gz",
+    )
+  ),
+  
+  mouse = list(
+    GRCm39 = c(
+      peptide = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_translated_cds.faa.gz",
+      gff = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_genomic.gff.gz",
+    )
+  ),
+  
+  rice = list(
+    IRGSP = c(
+      peptide = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/433/935/GCA_001433935.1_IRGSP-1.0/GCA_001433935.1_IRGSP-1.0_translated_cds.faa.gz",
+      gff = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/433/935/GCA_001433935.1_IRGSP-1.0/GCA_001433935.1_IRGSP-1.0_genomic.gff.gz"
+    ),
+    kitaake = c(
+      peptide = "https://phytozome-next.jgi.doe.gov/info/OsativaKitaake_v3_1",
+      gff = "https://phytozome-next.jgi.doe.gov/info/OsativaKitaake_v3_1"
+    )
+  ),
+  
+  maize = list(
+    B73 = c(
+      peptide = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/902/167/145/GCF_902167145.1_Zm-B73-REFERENCE-NAM-5.0/GCF_902167145.1_Zm-B73-REFERENCE-NAM-5.0_translated_cds.faa.gz",
+      gff = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/902/167/145/GCF_902167145.1_Zm-B73-REFERENCE-NAM-5.0/GCF_902167145.1_Zm-B73-REFERENCE-NAM-5.0_genomic.gff.gz"
+    )
+  ),
+  
+  arabidopsis = list(
+    TAIR10 = c(
+      peptide = "https://phytozome-next.jgi.doe.gov/info/Athaliana_Araport11",
+      gff = "https://phytozome-next.jgi.doe.gov/info/Athaliana_Araport11"
+    )
+  ),
+  
+  soybean = list(
+    WM82 = c(
+      peptide = "https://phytozome-next.jgi.doe.gov/info/Gmax_Wm82_a6_v1",
+      gff = "https://phytozome-next.jgi.doe.gov/info/Gmax_Wm82_a6_v1"
+    ),
+    fiskeby = c(
+      peptide = "https://phytozome-next.jgi.doe.gov/info/GmaxFiskeby_v1_1",
+      gff = "https://phytozome-next.jgi.doe.gov/info/GmaxFiskeby_v1_1"
+    )
+  )
+)
